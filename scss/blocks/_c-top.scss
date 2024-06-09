@@ -1,0 +1,93 @@
+@import "../base/vars";
+
+.c-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #f8f3f4;
+
+  &__title {
+    color: $selectedColor;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+  }
+}
+
+.nav__link {
+  color: $colorText;
+  font-weight: 300;
+  font-size: 14px;
+
+  &:active {
+    color: $selectedColor;
+    font-weight: 700;
+  }
+}
+
+.c-main {
+  padding-top: 52px;
+  padding-bottom: 96px;
+
+  &__filter-block {
+    display: flex;
+    gap: 320px;
+  }
+
+  &__filter {
+    outline: none;
+    border: none;
+    background: transparent;
+    display: flex;
+    gap: 11px;
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+  }
+
+  &__sort-list {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+
+  &__sort-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(111, 110, 110);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+}
+
+.c-main__product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 64px;
+}
+
+.c-main__pagination-block{
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.c-main__pagination{
+    padding: 12px 16px;
+    border: 1px solid rgb(235, 235, 235);
+    color: $colorText;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
