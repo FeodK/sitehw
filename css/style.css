@@ -28,14 +28,15 @@
   position: absolute;
   display: none;
   top: 75px;
+  right: -500px;
   background: rgb(255, 255, 255);
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  -webkit-transition: right 0.5s;
+  transition: right 0.5s;
   width: 232px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: display 0.3s;
-  transition: display 0.3s;
 }
 .header #burger {
   position: absolute;
@@ -45,6 +46,7 @@
 .header #burger:checked ~ .header__nav {
   display: block;
   z-index: 20;
+  right: 0;
 }
 .header__nav-content {
   padding: 32px;
