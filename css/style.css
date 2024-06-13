@@ -755,7 +755,7 @@ img {
   border-radius: 0 25px 25px 0/85%;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .center {
     padding-left: calc(50% - 360px);
     padding-right: calc(50% - 360px);
@@ -793,7 +793,7 @@ img {
             align-items: center;
   }
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .center,
   .top {
     padding-left: 16px;
@@ -861,7 +861,7 @@ img {
     gap: 40px;
   }
 }
-@media (max-width: 370px) {
+@media screen and (max-width: 370px) {
   .sale__block-info {
     top: -110px;
     left: 65px;
