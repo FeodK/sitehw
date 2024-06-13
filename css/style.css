@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
-.container {
-  overflow: hidden;
-}
-
 .header {
   position: relative;
   background: rgb(34, 34, 34);
@@ -387,6 +383,10 @@ li {
 
 img {
   max-width: 100%;
+}
+
+.container {
+  overflow: hidden;
 }
 
 .center {
