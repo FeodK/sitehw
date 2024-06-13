@@ -8,34 +8,6 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-.c-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background: #f8f3f4;
-
-  &__title {
-    color: $selectedColor;
-    font-family: Lato;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 29px;
-  }
-}
-
-.nav__link {
-  color: $colorText;
-  font-weight: 300;
-  font-size: 14px;
-
-  &:active {
-    color: $selectedColor;
-    font-weight: 700;
-  }
-}
-
 .c-main {
   padding-top: 52px;
   padding-bottom: 96px;
@@ -87,14 +59,11 @@ summary::-webkit-details-marker {
     line-height: 17px;
   }
 
-  &__filter-content {
-  }
-
   &__filter-item {
     margin-top: 16px;
   }
 
-  &__filter-item[open] .c-main__f-item-heading{
+  &__filter-item[open] .c-main__f-item-heading {
     color: $selectedColor;
   }
 
@@ -122,7 +91,7 @@ summary::-webkit-details-marker {
     line-height: 17px;
     transition: color ease 0.2s;
 
-    &:hover{
+    &:hover {
       color: $selectedColor;
     }
   }

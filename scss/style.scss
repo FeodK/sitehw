@@ -1,9 +1,11 @@
-@import 'blocks/header';
-@import 'blocks/footer';
-@import 'blocks/c-top';
-@import 'blocks/sort';
-@import 'base/vars';
-@import 'base/mixins';
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/product-top";
+@import "blocks/product";
+@import "blocks/catolog";
+@import "blocks/sort";
+@import "base/vars";
+@import "base/mixins";
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 
@@ -211,7 +213,7 @@ img {
   }
 
   &__button:hover {
-      color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     border: 1px solid rgb(255, 255, 255);
     background-color: rgb(242, 99, 118);
   }
@@ -243,7 +245,6 @@ img {
     transition: 0.5s linear;
   }
 }
-
 
 .advateges {
   background: rgb(34, 34, 36);
@@ -373,7 +374,6 @@ img {
     border-radius: 0 25px 25px 0/85%;
   }
 }
-
 
 @include mediaLaptop {
   .center {
