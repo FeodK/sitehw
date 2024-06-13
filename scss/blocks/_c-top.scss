@@ -1,5 +1,13 @@
 @import "../base/vars";
 
+summary {
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
 .c-top {
   display: flex;
   justify-content: space-between;
@@ -34,36 +42,89 @@
 
   &__filter-block {
     display: flex;
-    gap: 320px;
+    gap: 34%;
+  }
+
+  &__filter-sort {
+    position: relative;
   }
 
   &__filter {
+    position: absolute;
+    box-sizing: border-box;
+    width: 360px;
+    z-index: 3;
+
+    &[open] {
+      padding: 13px 16px 16px;
+      margin-top: -13px;
+      background: #fff;
+      box-shadow: 6px 4px 35px rgba($color: #000000, $alpha: 0.21);
+    }
+
+    &[open] .c-main__filter-heading {
+      color: $selectedColor;
+    }
+
+    &[open] path {
+      fill: $selectedColor;
+    }
+  }
+
+  &__filter-summary {
     outline: none;
     border: none;
     background: transparent;
     display: flex;
     gap: 11px;
     align-items: center;
+    cursor: pointer;
+  }
 
+  &__filter-heading {
     font-size: 14px;
     font-weight: 600;
     line-height: 17px;
   }
 
-  &__sort-list {
-    display: flex;
-    align-items: center;
-    gap: 28px;
+  &__filter-content {
   }
 
-  &__sort-item {
+  &__filter-item {
+    margin-top: 16px;
+  }
+
+  &__filter-item[open] .c-main__f-item-heading{
+    color: $selectedColor;
+  }
+
+  &__f-item-heading {
+    padding: 8px 11px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    cursor: pointer;
+    border-bottom: 1px solid #ebebeb;
+    border-left: 5px solid $selectedColor;
+  }
+
+  &__filter-link-box {
+    padding: 24px 16px;
     display: flex;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;
+    gap: 11px;
+  }
+
+  &__filter-link {
     color: rgb(111, 110, 110);
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
+    transition: color ease 0.2s;
+
+    &:hover{
+      color: $selectedColor;
+    }
   }
 }
 
@@ -75,19 +136,18 @@
   margin-top: 64px;
 }
 
-.c-main__pagination-block{
-    margin-top: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.c-main__pagination-block {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.c-main__pagination{
-    padding: 12px 16px;
-    border: 1px solid rgb(235, 235, 235);
-    color: $colorText;
-    display: flex;
-    align-items: center;
-    gap: 16px;
+.c-main__pagination {
+  padding: 12px 16px;
+  border: 1px solid rgb(235, 235, 235);
+  color: $colorText;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
