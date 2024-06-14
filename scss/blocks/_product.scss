@@ -1,8 +1,17 @@
 .slider {
   position: relative;
   box-sizing: border-box;
-  max-width: 1600px;
-  margin: 0 auto;
+  max-width: 100%;
+  background: #F7F7F7;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__img {
+    padding-top: 11px;
+    padding-bottom: 42px;
+  }
 
   &__arrow-back {
     position: absolute;
@@ -84,12 +93,12 @@
     margin-bottom: 130px;
 
     &::after {
-        position: absolute;
-        top: 115px;
-        left: -280px;
-        content: "";
-        width: 641px;
-        border: 1px solid rgb(234, 234, 234);
+      position: absolute;
+      top: 115px;
+      left: -280px;
+      content: "";
+      width: 641px;
+      border: 1px solid rgb(234, 234, 234);
     }
   }
 

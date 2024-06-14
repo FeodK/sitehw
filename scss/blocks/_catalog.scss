@@ -8,7 +8,7 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-.c-main {
+.catalog {
   padding-top: 52px;
   padding-bottom: 96px;
 
@@ -34,7 +34,7 @@ summary::-webkit-details-marker {
       box-shadow: 6px 4px 35px rgba($color: #000000, $alpha: 0.21);
     }
 
-    &[open] .c-main__filter-heading {
+    &[open] .catalog__filter-heading {
       color: $selectedColor;
     }
 
@@ -63,7 +63,7 @@ summary::-webkit-details-marker {
     margin-top: 16px;
   }
 
-  &__filter-item[open] .c-main__f-item-heading {
+  &__filter-item[open] .catalog__f-item-heading {
     color: $selectedColor;
   }
 
@@ -95,28 +95,30 @@ summary::-webkit-details-marker {
       color: $selectedColor;
     }
   }
+
+  &__product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 64px;
+  }
+  
+  &__pagination-block {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  &__pagination {
+    padding: 12px 16px;
+    border: 1px solid rgb(235, 235, 235);
+    color: $colorText;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
 }
 
-.c-main__product-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 30px;
-  margin-top: 64px;
-}
 
-.c-main__pagination-block {
-  margin-top: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.c-main__pagination {
-  padding: 12px 16px;
-  border: 1px solid rgb(235, 235, 235);
-  color: $colorText;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
