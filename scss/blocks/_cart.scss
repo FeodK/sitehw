@@ -1,0 +1,236 @@
+.cart {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 96px;
+  padding-bottom: 128px;
+
+  &__left {
+    max-width: 652px;
+  }
+
+  &__products {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__item {
+    display: flex;
+    max-height: 306px;
+    box-shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.13);
+  }
+
+  &__product-content {
+    position: relative;
+    padding: 22px 97px 62px 31px;
+    max-width: 222px;
+  }
+
+  &__product-close {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+      path {
+        fill: $selectedColor;
+      }
+    }
+  }
+
+  &__product-title {
+    margin-bottom: 71px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+  }
+
+  &__product-desc {
+    margin: 0;
+    color: $colorText;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  &__product-price-total {
+    color: $selectedColor;
+  }
+
+  &__product-quantity-amount {
+    border: 1px solid rgb(234, 234, 234);
+    padding: 1px 16px;
+    margin-left: 24px;
+  }
+
+  &__btns {
+    margin-top: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__btn {
+    cursor: pointer;
+    padding: 16px 40px;
+    outline: none;
+    border: 1px solid #a4a4a4;
+    background: transparent;
+
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+
+    transition: all 0.4s;
+
+    &:hover {
+      color: white;
+      background-color: $selectedColor;
+      border-color: $selectedColor;
+      box-shadow: 12px 8px 18px 0px rgba(0, 0, 0, 0.13);
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 57px;
+  }
+
+  &__total {
+    background: rgb(245, 243, 243);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 40px 44px 42px 44px;
+
+    color: $colorText;
+  }
+
+  &__sub-total {
+    display: flex;
+    gap: 20px;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    margin-bottom: 13px;
+  }
+
+  &__grand-total {
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    margin-bottom: 39px;
+
+    &_price {
+      font-weight: 700;
+      color: $selectedColor;
+    }
+  }
+
+  &__checkout-btn {
+    position: relative;
+    cursor: pointer;
+    padding: 15px 43px 16px 41px;
+    outline: none;
+    border: none;
+
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+
+    color: white;
+    background-color: $selectedColor;
+
+    transition: all .4s;
+
+    &::before {
+        content: '';
+        height: 1px;
+        width: 100%;
+        background-color: rgb(226, 226, 226);
+        position: absolute;
+        top: -17px;
+        right: 0;
+    }
+
+    &:hover {
+        color: $selectedColor;
+        background-color: white;
+        box-shadow: 12px 8px 18px 0px rgba(0, 0, 0, 0.13);
+    }
+  }
+}
+
+.order-form {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__title {
+    color: $colorText;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+  }
+
+  &__input {
+    outline: none;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    padding-top: 13px;
+    padding-left: 17px;
+    padding-bottom: 16px;
+    border: 1px solid rgb(164, 164, 164);
+    transition: all 0.4s;
+
+    &:focus {
+      transform: scale(1.01);
+      box-shadow: 12px 8px 18px 0px rgba(0, 0, 0, 0.13);
+    }
+
+    &_light::placeholder {
+      color: #b1b1b1;
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+    outline: none;
+    box-sizing: border-box;
+    padding: 10px 14px 12px 14px;
+    width: 108px;
+    overflow: none;
+    background: transparent;
+    border: 1px solid rgb(164, 164, 164);
+
+    color: $colorText;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 13px;
+    transition: all 0.4s;
+
+    &:hover {
+      transform: scale(1.03);
+      color: white;
+      background-color: $selectedColor;
+      border-color: $selectedColor;
+      box-shadow: 12px 10px 18px 0px rgba(0, 0, 0, 0.13);
+    }
+
+    &:focus {
+      transform: scale(1.03);
+      color: white;
+      background-color: $selectedColor;
+      border-color: $selectedColor;
+      box-shadow: 12px 10px 18px 0px rgba(0, 0, 0, 0.13);
+    }
+  }
+}

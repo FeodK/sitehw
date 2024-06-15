@@ -13,15 +13,42 @@
     margin-right: 41px;
   }
 
+  &__left-search{
+    transition: all .4s;
+
+    &:hover {
+      path {
+        fill: $selectedColor;
+      }
+    }
+  }
+
   &__right-link {
     margin-left: 33px;
+    transition: all .4s;
+
+    &:hover {
+
+      path {
+        fill: $selectedColor;
+      }
+    }
   }
 
   &__right-menu {
+    cursor: pointer;
     outline: none;
     border: 0;
     background: transparent;
+    transition: all .4s;
+
+    &:hover {
+      path {
+        fill: $selectedColor;
+      }
+    }
   }
+  
 
   &__nav {
     position: absolute;
@@ -60,6 +87,11 @@
     font-weight: 400;
     line-height: 17px;
     cursor: pointer;
+    transition: color .3s;
+
+    &:hover {
+      color: $selectedColor;
+    }
   }
 
   &__nav-item[open] .header__nav-heading{

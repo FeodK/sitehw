@@ -4,6 +4,7 @@
 @import "blocks/product";
 @import "blocks/catalog";
 @import "blocks/sort";
+@import "blocks/cart";
 @import "base/vars";
 @import "base/mixins";
 
@@ -337,6 +338,7 @@ img {
   }
 
   &__input {
+    outline: none;
     width: 256px;
     height: 49px;
     border: none;
@@ -345,6 +347,13 @@ img {
     cursor: line;
     box-sizing: border-box;
     padding-left: 20px;
+
+    transition: all 0.4s;
+
+    &:focus {
+      background: rgb(255, 255, 255);
+      box-shadow: 12px 8px 18px 0px rgba(0, 0, 0, 0.13);
+    }
   }
 
   &__input::placeholder {
@@ -352,14 +361,11 @@ img {
     font-family: Lato;
     font-size: 14px;
     font-weight: 400;
-  }
 
-  &__input:focus {
-    border: none;
-    outline: none;
   }
 
   &__btn {
+    cursor: pointer;
     width: 100px;
     height: 49px;
     margin-left: -4px;
@@ -372,6 +378,13 @@ img {
     font-size: 14px;
     font-weight: 400;
     border-radius: 0 25px 25px 0/85%;
+    transition: all .4s;
+
+    &:hover {
+      color: $selectedColor;
+      background-color: white;
+      box-shadow: 12px 8px 18px 0px rgba(0, 0, 0, 0.13);
+  }
   }
 }
 
