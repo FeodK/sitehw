@@ -15,7 +15,7 @@
     }
   }
   
-  .nav {
+  .breadcrumbs {
     color: $colorText;
     
     &__link {
@@ -26,10 +26,13 @@
 
       &:hover {
         color: $selectedColor;
+        font-weight: 700;
       }
       
       &::after {
         content: '/';
+        color: $colorText !important;
+        font-weight: 300 !important;
         padding-left: 4px;
         padding-right: 4px;
       }

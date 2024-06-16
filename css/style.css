@@ -191,29 +191,32 @@ footer {
   line-height: 29px;
 }
 
-.nav {
+.breadcrumbs {
   color: rgb(93, 93, 93);
 }
-.nav__link {
+.breadcrumbs__link {
   color: rgb(93, 93, 93);
   font-weight: 300;
   font-size: 14px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
-.nav__link:hover {
-  color: #F16D7F;
-}
-.nav__link::after {
-  content: "/";
-  padding-left: 4px;
-  padding-right: 4px;
-}
-.nav__link:last-of-type {
+.breadcrumbs__link:hover {
   color: #F16D7F;
   font-weight: 700;
 }
-.nav__link:last-of-type::after {
+.breadcrumbs__link::after {
+  content: "/";
+  color: rgb(93, 93, 93) !important;
+  font-weight: 300 !important;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.breadcrumbs__link:last-of-type {
+  color: #F16D7F;
+  font-weight: 700;
+}
+.breadcrumbs__link:last-of-type::after {
   content: none;
 }
 
