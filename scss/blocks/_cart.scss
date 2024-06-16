@@ -56,15 +56,23 @@
     line-height: 26px;
   }
 
-  &__product-price-total {
-    color: $selectedColor;
+  &__product-price {
+    &_selected {
+      color: $selectedColor;
+    }
   }
 
-  &__product-quantity-amount {
-    border: 1px solid rgb(234, 234, 234);
-    padding: 1px 16px;
-    margin-left: 24px;
+  &__product-quantity {
+    display: flex;
+    gap: 32px;
+
+    &_amount {
+      border: 1px solid rgb(234, 234, 234);
+      width: 24px; 
+      height: 25px;
+      padding-left: 14px;
   }
+}
 
   &__btns {
     margin-top: 72px;
@@ -147,22 +155,22 @@
     color: white;
     background-color: $selectedColor;
 
-    transition: all .4s;
+    transition: all 0.4s;
 
     &::before {
-        content: '';
-        height: 1px;
-        width: 100%;
-        background-color: rgb(226, 226, 226);
-        position: absolute;
-        top: -17px;
-        right: 0;
+      content: "";
+      height: 1px;
+      width: 100%;
+      background-color: rgb(226, 226, 226);
+      position: absolute;
+      top: -17px;
+      right: 0;
     }
 
     &:hover {
-        color: $selectedColor;
-        background-color: white;
-        box-shadow: 12px 8px 18px 0px rgba(0, 0, 0, 0.13);
+      color: $selectedColor;
+      background-color: white;
+      box-shadow: 12px 8px 18px 0px rgba(0, 0, 0, 0.13);
     }
   }
 }
