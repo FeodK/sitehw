@@ -1,3 +1,5 @@
+@import '../base/mixins';
+
 .slider {
   position: relative;
   box-sizing: border-box;
@@ -141,4 +143,22 @@
   flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 128px;
+}
+
+@include mediaLaptop {
+
+  .product {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .product-list {
+    gap: 16px;
+  }
+
+  .goods {
+    &__item_hidden {
+      display: none;
+    }
+  }
 }

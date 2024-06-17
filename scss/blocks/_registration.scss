@@ -1,8 +1,9 @@
+@import '../base/mixins';
+
 .registration {
   padding-top: 64px;
   padding-bottom: 96px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 
   &__advantages {
@@ -31,5 +32,18 @@
     display: flex;
     align-items: center;
     gap: 23px;
+  }
+}
+
+
+@include mediaLaptop {
+  .registration {
+    padding-top: 40px;
+    gap: 22px;
+
+    &__advantages {
+      width: 356px;
+      font-size: 16px;
+    }
   }
 }

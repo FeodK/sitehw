@@ -1,4 +1,6 @@
 @import "../base/vars";
+@import '../base/mixins';
+
 
 summary {
   display: block;
@@ -121,4 +123,26 @@ summary::-webkit-details-marker {
   }
 }
 
+@include mediaLaptop {
+  .catalog {
+    padding-top: 24px;
+    padding-bottom: 63px;
+
+    &__filter-block {
+      justify-content: space-between;
+    }
+
+    &__product-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    &__pagination-block {
+      margin-top: 40px;
+    }
+  }
+
+}
 

@@ -375,6 +375,18 @@ footer {
   margin-bottom: 128px;
 }
 
+@media screen and (max-width: 1024px) {
+  .product {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .product-list {
+    gap: 16px;
+  }
+  .goods__item_hidden {
+    display: none;
+  }
+}
 summary {
   display: block;
 }
@@ -503,6 +515,26 @@ summary::-webkit-details-marker {
   gap: 16px;
 }
 
+@media screen and (max-width: 1024px) {
+  .catalog {
+    padding-top: 24px;
+    padding-bottom: 63px;
+  }
+  .catalog__filter-block {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .catalog__product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 40px;
+  }
+  .catalog__pagination-block {
+    margin-top: 40px;
+  }
+}
 .sort {
   position: relative;
   display: -webkit-box;
@@ -925,14 +957,41 @@ summary::-webkit-details-marker {
           box-shadow: 12px 8px 18px 0px rgba(0, 0, 0, 0.13);
 }
 
+@media screen and (max-width: 1024px) {
+  .cart {
+    padding-top: 59px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 64px;
+  }
+  .cart__left {
+    max-width: 734px;
+  }
+  .cart__product-close {
+    right: -84px;
+  }
+  .cart__right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cart__checkout-btn {
+    padding: 16px 30px;
+  }
+}
 .registration {
   padding-top: 64px;
   padding-bottom: 96px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -970,6 +1029,16 @@ summary::-webkit-details-marker {
   gap: 23px;
 }
 
+@media screen and (max-width: 1024px) {
+  .registration {
+    padding-top: 40px;
+    gap: 22px;
+  }
+  .registration__advantages {
+    width: 356px;
+    font-size: 16px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
