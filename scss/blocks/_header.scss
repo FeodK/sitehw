@@ -23,6 +23,11 @@
     }
   }
 
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
   &__right-link {
     margin-left: 33px;
     transition: all .4s;
@@ -37,8 +42,6 @@
 
   &__right-menu {
     cursor: pointer;
-    outline: none;
-    border: 0;
     background: transparent;
     transition: all .4s;
 

@@ -1,8 +1,12 @@
+@import "../base/vars";
+@import "../base/mixins";
+
 .sort {
   position: relative;
   display: flex;
   align-items: center;
   gap: 28px;
+  z-index: 10;
 
   &__list {
     cursor: pointer;
@@ -41,5 +45,12 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
+  }
+}
+
+
+@include mediaTablet {
+  .sort {
+    gap: 19px;
   }
 }

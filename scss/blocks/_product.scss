@@ -78,6 +78,7 @@
   &__desc {
     color: $colorText;
     max-width: 555px;
+    min-width: 326px;
     text-align: center;
     font-size: 14px;
     font-weight: 300;
@@ -160,5 +161,32 @@
     &__item_hidden {
       display: none;
     }
+  }
+}
+
+@include mediaTablet {
+  .product {
+    &__content {
+      margin-bottom: 64px;
+    }
+
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &__price {
+      margin-bottom: 82px;
+
+      &::after {
+        position: absolute;
+        top: 60px;
+        left: -60px;
+        width: 175px;
+      }
+    }
+  }
+
+  .product-list {
+    margin-bottom: 64px;
   }
 }
